@@ -1,0 +1,386 @@
+.construction{
+    color: #c75c3b !important;
+    width: 300px;
+    position: fixed;
+    z-index: 101;
+    background: #ffffff;
+    box-shadow: 0 0 5px black;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+    text-transform: uppercase;
+    cursor:pointer !important;
+}
+
+/* CSS Document */
+a[href^="http://"]:after, 
+a[href^="https://"]:after {
+    content: url(../img/Icon_External_Link.png);
+  margin: 0 0 0 5px;
+}
+a[href*="//jeremylyman.net/"]:after {
+  content: '';
+  margin: 0;
+}
+a[href*="//p.jeadly.com/"]:after {
+  content: '';
+  margin: 0;
+}
+a[href*="googleusercontent.com"]:after {
+  content: '';
+  margin: 0;
+}
+
+
+/*//////////////////////
+major page elements
+//////////////////////*/
+
+body, html{
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dbdbdb;
+    background-image: linear-gradient(to bottom right, #efefef , #dbdbdb);
+    background: #282f35 url(https://p.jeadly.com/blur_6/c924ba1fa7.jpg) no-repeat;
+    background: #282f35 url(https://p.jeadly.com/blur_6/ddc4f760bb.jpg) no-repeat;
+    
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+}
+#zoomBoxContainer{
+    position: relative;
+    
+    
+}
+#zoomBoxContainer.floatRight{
+    border-left: 1px #c75c3b solid;
+}
+#zoomBoxContainer.floatLeft{
+    border-right: 1px #c75c3b solid;
+}
+#ZoomBox{
+    background: white;
+}
+#ZoomImage{
+}
+.main{
+	background-color: #FFF;
+	width:900px;
+	margin:0 auto;
+	box-shadow: inset 0 -1em 2em rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.45), 0 5px 10px rgba(0,0,0,.7);
+}
+.wrapper{
+    padding: 25px;
+}
+.footer{
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    color: #cc5c3b;
+    font-size: 24px;
+    text-shadow: 1px 1px 0px #696767;
+    line-height: 1px;
+    background-image: linear-gradient(to bottom, #fff , #e2e2e2);
+}
+
+
+.footerbutton{
+    background: #c75c3b;
+    color: white;
+    padding: 2px;
+    outline: 2px grey outset;
+    font-size: .8em;
+    z-index: 2;
+    position: relative;
+    margin: 4px;
+}
+.footerbutton:hover{
+    background:#d78973;
+    outline: 2px grey intset;
+}
+
+/*//////////////////////
+named element style
+//////////////////////*/
+.italic{
+    font-style: italic;
+    text-shadow: 0 0 2px #b5b5b5;
+}
+.bold{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.smaller{
+    font-size: .8em;
+}
+hr{
+    border: 0;
+    border-top: 1px solid #395475;
+    margin: 30px 0 35px 0;
+    height: 8px;
+    background-image: linear-gradient(90deg, transparent, #314966, transparent);
+    border: 0;
+    height: 1px;
+}
+h1{
+    
+}
+h2{
+    color: #505050;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 1px 2px 3px #a2a2a2;
+    text-decoration: underline overline;
+    text-decoration-color: #92432b;
+}
+h3{
+    color:#c75c3b;
+	text-transform:uppercase;
+	font-family: 'Libre Baskerville', serif;
+	text-shadow: 3px 2px 3px #8b8ba5;
+}
+h3 a{
+    color:inherit;
+}
+p{
+    font-family: 'Proza Libre', sans-serif;
+}
+
+ul.camera{
+    color:#c75c3b;
+    font-family: 'Libre Baskerville', serif;
+    text-shadow: 1px 2px 3px #a2a2a2;
+    font-size: 1.3em;
+    list-style-image: url('/img/camera_icon.png');
+    list-style-position: inside;
+}
+ul a ,ul a:visited {
+    color: inherit;
+}
+.clear{
+	clear:both;
+}
+
+/*//////////////////////
+image styles
+//////////////////////*/
+.thumbgallery{
+    border-top: 5px #e3e3e3 double;
+    text-align: center;
+    display: inline-block;
+    margin: 25px;
+}
+.thumbgallery div{
+    text-align: center;
+}
+
+.thumbgallery img{
+    margin: 8px 5px 8px 5px;
+    vertical-align: middle;
+    -webkit-box-shadow: 0 2px 4px 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.65);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    animation-name: example;
+    animation-duration: 3s;
+    display: inline-flex;
+    max-width:90%;
+    width:200px;
+    height: 200px;
+    object-fit: cover;
+}
+.thumbgallery .oneLeft{
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.thumbgallery .oneLeft p{
+    width:450px;
+    flex: 1 1 70%;
+    border-left: 1px #c75c3b solid;
+    text-align: left;
+    padding-left: 10px;
+}
+.thumbgallery .oneLeft div{
+    width: 240px;
+    flex: 0 0 30%;
+    display: inline;
+}
+.thumbgallery .oneRight{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.thumbgallery .oneRight p{
+    width:450px;
+    flex: 1 1 70%;
+    border-right: 1px #c75c3b solid;
+    text-align: left;
+    padding-right: 10px;
+}
+.thumbgallery .oneRight div{
+    width: 240px;
+    flex: 0 0 30%;
+    display: inline;
+}
+.thumbgallery .twoLeft{
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.thumbgallery .twoLeft p{
+    width:350px;
+    flex: 1 1 60%;
+    border-left: 1px #c75c3b solid;
+    text-align: left;
+    padding-left: 10px;
+}
+.thumbgallery .twoLeft div{
+    width: 440px;
+    flex: 0 0 58%;
+    display: inline;
+}
+.thumbgallery .twoRight{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.thumbgallery .twoRight p{
+    flex: 1 1 60%;
+    width:350px;
+    border-right: 1px #c75c3b solid;
+    text-align: left;
+    padding-right: 10px;
+}
+.thumbgallery .twoRight div{
+    flex: 0 0 58%;
+    width: 440px;
+    display: inline;
+}
+.thumbgallery .twoCenter div{
+    width:460px;
+    margin: auto;
+}
+.thumbgallery .threeCenter div{
+    width: 700px;
+    margin: auto;
+}
+
+
+a img{
+    cursor: zoom-in;
+}
+.logo img{
+    cursor: pointer;
+}
+.photo{
+		box-shadow: 0 0 5px #FFFFFF;
+		
+}
+.rotate-container{
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.rotate{
+    width: 150px !important;
+    transform: rotate(90deg);
+    position: absolute;
+    top: -217%;
+    left: 41%
+}
+.featurePhoto{
+    box-shadow: 0 0 15px #353535;
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin:auto;
+}
+.samplePhoto{
+    border-radius: 5px;
+    box-shadow: inset 0 -1em 2em rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.45), 0 5px 10px rgba(0,0,0,.7);
+    display: block;
+    margin:auto;
+}
+#ZoomImage{
+    cursor: zoom-out !important;
+}
+/*//////////////////////
+position layout
+//////////////////////*/
+.top{
+    position: absolute;
+    top:0;
+}
+.bottom{
+    position: absolute;
+    bottom:0;
+}
+.center{
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+    text-align: center;
+}
+.left{
+    position: absolute;
+    left:0;
+}
+.floatContainer{
+    position: relative;
+}
+.floatColumn{
+	position:relative;
+	float:left;
+	width:270px;
+	padding-left:40px;
+}
+.floatRight{
+    float: right;
+}
+.floatLeft{
+    float: left;
+}
+.padding{
+    padding: 16px;
+}
+/*//////////////////////
+Widths
+//////////////////////*/
+.quarter{
+    width: 25%;
+}
+.third{
+    width: 32%;
+    padding-left:10px;
+}
+.third p, .half p, .twothird p{
+    border-right: 1px #c75c3b solid;
+    text-align: justify;
+    padding-right: 10px;
+}
+.third h3, .half h3{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.half{
+    width: 49%;
+    padding-left:3px;
+}
+.twothird{
+    width: 65%;
+    padding-left:10px;
+}
+
+@media only screen and (min-width: 1400px),
+{
+  .main{
+      width:1200px;
+  }
+ .thumbgallery .twoLeft div, .thumbgallery .twoRight div{
+     flex: 0 0 48%;
+ }
+}
